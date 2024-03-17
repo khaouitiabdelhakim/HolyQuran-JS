@@ -1,5 +1,9 @@
-# AI-Lyrics
-![alt text](https://github.com/khaouitiabdelhakim/AILyrics-JS/blob/main/LyricsAI.png)
+# HolyQuran Android Kotlin Library
+
+The HolyQuran Android Library empowers developers to seamlessly incorporate comprehensive Quranic data into Android applications. It provides essential Surah details such as name, type, English name, number, verses, words, and letters, facilitating easy access to Quranic information within your Android projects.
+
+![alt text](https://github.com/khaouitiabdelhakim/HolyQuran/blob/master/HolyQuran.png)
+
 
 ```
 If you find this repository useful or it has helped you,
@@ -11,68 +15,64 @@ If you'd like to support further, consider buying me a coffee:
 ```
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee--yellow.svg?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/kh.abdelhakim)
 
-## Description
+## Example Usage
 
-`ai-lyrics` is a JavaScript library that allows you to easily fetch song lyrics from various sources on the web. It utilizes Puppeteer, a headless browser automation tool, to scrape lyrics from search results and provides methods to retrieve lyrics by song title or by both song title and artist.
+```kotlin
+// Example of accessing the 3rd verse of the 4th Surah in the Holy Quran
+val holyQuran = HolyQuran()
+val thirdVerseFourthSurah: String = holyQuran.hafsVersion[3].verses[2]
+```
+
+## Features
+
+- Access detailed Surah information including name, type, English name, number of verses, words, and letters.
+- Retrieve specific verses of Surahs easily.
+- Translation available in 49 world languages.
+
+
+## Supported Languages for Translation:
+Russian, Chinese, Hindi, Spanish, Portuguese, Bengali, Urdu, Italian, Vietnamese, Turkish, Thai, Polish, German, Dutch, Icelandic, Hausa, Albanian, Persian, Azerbaijani, Swahili, Tajik, Tamil, Pashto, Malayalam, Malay, Sinhala, Amharic, Kurdish (Sorani), Bulgarian, Kazakh, Filipino, Sindhi, Korean, Japanese, Swedish, Norwegian, Somali, Croatian, Yoruba, Fulani, Tatar, Uyghur, Kyrgyz, Punjabi, Javanese, Telugu
+
+```kotlin
+val germanVerse: String = germanQuran.verses[3][2]
+// Example of accessing the 3rd verse of the 4th Surah in German translation:
+// Und wenn ihr befürchtet, nicht gerecht hinsichtlich der Waisen zu handeln ...
+```
 
 ## Installation
 
-You can install `ai-lyrics` via npm:
+### Step 1. Add the JitPack repository to your build file
 
-```bash
-npm install ai-lyrics
-```
+Add it in your root build.gradle at the end of repositories:
 
-## Usage
-
-```javascript
-const LyricsAI = require('ai-lyrics');
-
-(async function() {
-    try {
-        // Specify the song title and artist
-        const songTitle = "Lily";
-        const artist = "Alan Walker";
-
-        // Fetch lyrics by song title and artist
-        const lyricsByTitleAndArtist = await LyricsAI.findLyricsBySongTitleAndArtist(songTitle, artist);
-        console.log(lyricsByTitleAndArtist);
-    } catch (error) {
-        console.error("Error:", error);
+```groovy
+allprojects {
+    repositories {
+        // Other repositories
+        maven { url = "https://jitpack.io" }
     }
-})();
+}
 ```
 
-Running this example will log the lyrics of the song "Lily" by Alan Walker.
-```
-Lily was a little girl
-Afraid of the big, wide world
-She grew up within her castle walls
-Now and then, she tried to run
-...
-Just let me in, ooh
+### Step 2. Add the dependency
+
+```groovy
+dependencies {
+    implementation ("com.github.khaouitiabdelhakim:HolyQuran:Tag")
+}
 ```
 
 
-## Notes
+# Note:  
+Do not forget to change Tag with the latest version - current version [![](https://jitpack.io/v/khaouitiabdelhakim/HolyQuran.svg)](https://jitpack.io/#khaouitiabdelhakim/HolyQuran)
 
-- Make sure you have Node.js installed on your system.
-- Please be aware of web scraping regulations and respect the terms of service of the websites from which you are scraping lyrics.
-
-
-## Author
-
-This library is authored by KHAOUITI ABDELHAKIM.
-
-For more information, visit the [GitHub repository](https://github.com/khaouitiabdelhakim/AILyrics-JS).
 
 ## Contribution
 
-```
-Fork this repository if you wish to make changes or contribute improvements.
-```
+This project is open to contributions. Feel free to contribute to the development of this library by forking the repository, making your changes, and creating pull requests.
 
 ## License
+This project is licensed under the MIT License 
 
 ```
 Copyright 2024 KHAOUITI ABDELHAKIM
@@ -87,4 +87,6 @@ distributed under the MIT License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the MIT License.
+
+made with love 💖 - KHAOUITI Apps 2024
 ```

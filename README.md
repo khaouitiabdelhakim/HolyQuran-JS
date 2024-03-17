@@ -1,13 +1,12 @@
-# HolyQuran Android Kotlin Library
+# HolyQuran JavaScript Library
 
-The HolyQuran Android Library empowers developers to seamlessly incorporate comprehensive Quranic data into Android applications. It provides essential Surah details such as name, type, English name, number, verses, words, and letters, facilitating easy access to Quranic information within your Android projects.
+The HolyQuran JavaScript Library provides easy access to comprehensive Quranic data for JavaScript applications. It enables developers to seamlessly incorporate Surah details, including name, type, English name, number of verses, words, and letters, into their projects.
 
-![alt text](https://github.com/khaouitiabdelhakim/HolyQuran/blob/master/HolyQuran.png)
-
+![HolyQuran](https://github.com/khaouitiabdelhakim/HolyQuran/blob/master/HolyQuran.png)
 
 ```
-If you find this repository useful or it has helped you,
-please don't forget to leave a ⭐️, or even follow my GitHub account.
+If you find this library useful or it has helped you,
+please consider leaving a ⭐️, or even following my GitHub account.
 Your support motivates me to continue providing helpful resources.
 Thank you for your appreciation! 🌟🚀💖😊👍
 
@@ -17,10 +16,49 @@ If you'd like to support further, consider buying me a coffee:
 
 ## Example Usage
 
-```kotlin
+```javascript
 // Example of accessing the 3rd verse of the 4th Surah in the Holy Quran
-val holyQuran = HolyQuran()
-val thirdVerseFourthSurah: String = holyQuran.hafsVersion[3].verses[2]
+const quran = require('holy-quran');
+
+const hasfsHolyQuran = quran.HolyQuranHafsVersion;
+const thirdVerseFourthSurah = hasfsHolyQuran[3]["verses"][2];
+console.log(thirdVerseFourthSurah);
+
+// Example of accessing the 4th english name
+const englishName = hasfsHolyQuran[3]["englishName"];
+console.log(englishName);
+// Al-Nesaa
+
+// Example of accessing the 3rd verse of the 4th Surah in the Holy Quran but in German
+const germanHolyQuran = quran.QuranGerman;
+const thirdVerseFourthSurahGerman = germanHolyQuran[3][2];
+console.log(thirdVerseFourthSurahGerman);
+
+// Und wenn ihr befürchtet, nicht gerecht hinsichtlich der Waisen zu handeln, dann heiratet, was euch an Frauen gut scheint, zwei, 
+// drei oder vier. Wenn ihr aber befürchtet, nicht gerecht zu handeln, dann (nur) eine oder was eure rechte Hand besitzt. Das ist eher geeignet, daß ihr nicht ungerecht seid.
+
+```
+
+## Surah sample
+
+
+```json
+{
+    name: "الفلق",
+    type: "مكيّة",
+    englishName: "Al-Falak",
+    number: 113,
+    numberOfVerses: 5,
+    numberOfWords: 23,
+    numberOfLetters: 71,
+    verses: [
+      "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+      "مِن شَرِّ مَا خَلَقَ",
+      "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+      "وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+      "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+    ],
+  }
 ```
 
 ## Features
@@ -29,50 +67,32 @@ val thirdVerseFourthSurah: String = holyQuran.hafsVersion[3].verses[2]
 - Retrieve specific verses of Surahs easily.
 - Translation available in 49 world languages.
 
+## Supported Languages for Translation
 
-## Supported Languages for Translation:
 Russian, Chinese, Hindi, Spanish, Portuguese, Bengali, Urdu, Italian, Vietnamese, Turkish, Thai, Polish, German, Dutch, Icelandic, Hausa, Albanian, Persian, Azerbaijani, Swahili, Tajik, Tamil, Pashto, Malayalam, Malay, Sinhala, Amharic, Kurdish (Sorani), Bulgarian, Kazakh, Filipino, Sindhi, Korean, Japanese, Swedish, Norwegian, Somali, Croatian, Yoruba, Fulani, Tatar, Uyghur, Kyrgyz, Punjabi, Javanese, Telugu
 
-```kotlin
-val germanVerse: String = germanQuran.verses[3][2]
-// Example of accessing the 3rd verse of the 4th Surah in German translation:
-// Und wenn ihr befürchtet, nicht gerecht hinsichtlich der Waisen zu handeln ...
-```
 
 ## Installation
 
-### Step 1. Add the JitPack repository to your build file
+### Step 1: Install via npm
 
-Add it in your root build.gradle at the end of repositories:
-
-```groovy
-allprojects {
-    repositories {
-        // Other repositories
-        maven { url = "https://jitpack.io" }
-    }
-}
+```bash
+npm i holy-quran
 ```
 
-### Step 2. Add the dependency
+### Step 2: Import in your project
 
-```groovy
-dependencies {
-    implementation ("com.github.khaouitiabdelhakim:HolyQuran:Tag")
-}
+```javascript
+const quran = require('holy-quran');
 ```
-
-
-# Note:  
-Do not forget to change Tag with the latest version - current version [![](https://jitpack.io/v/khaouitiabdelhakim/HolyQuran.svg)](https://jitpack.io/#khaouitiabdelhakim/HolyQuran)
-
 
 ## Contribution
 
 This project is open to contributions. Feel free to contribute to the development of this library by forking the repository, making your changes, and creating pull requests.
 
 ## License
-This project is licensed under the MIT License 
+
+This project is licensed under the MIT License.
 
 ```
 Copyright 2024 KHAOUITI ABDELHAKIM
@@ -90,3 +110,5 @@ limitations under the MIT License.
 
 made with love 💖 - KHAOUITI Apps 2024
 ```
+
+This README provides an overview of the HolyQuran JavaScript Library and instructions for usage, installation, and contribution.

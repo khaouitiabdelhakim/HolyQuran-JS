@@ -2,7 +2,7 @@
 
 The HolyQuran JavaScript Library provides easy access to comprehensive Quranic data for JavaScript applications. It enables developers to seamlessly incorporate Surah details, including name, type, English name, number of verses, words, and letters, into their projects.
 
-![HolyQuran](https://github.com/khaouitiabdelhakim/HolyQuran-JS/blob/master/HolyQuranJS.png)
+![HolyQuran]((https://github.com/khaouitiabdelhakim/HolyQuran-JS/blob/main/HolyQuranJS.png)
 
 ```
 If you find this library useful or it has helped you,

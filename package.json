@@ -2,7 +2,7 @@
   "name": "holy-quran",
   "description": "The Holy Quran Android Library empowers developers to incorporate comprehensive Quranic data seamlessly into Android applications. It furnishes essential surah details, such as name, type, English name, number, verses, words, and letters.",
   "author": "KHAOUITI ABDELHAKIM",
-  "version": "1.O.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
   "repository": {

@@ -1,6 +1,6 @@
 const modules = require('./index');
 
-hasfsHolyQuran = modules.hasfsHolyQuran;
+hasfsHolyQuran = modules.HolyQuranHafsVersion;
 
 // Check if hasfsHolyQuran[0] exists before accessing its properties
 if (hasfsHolyQuran[0] && hasfsHolyQuran[0]["verses"]) {

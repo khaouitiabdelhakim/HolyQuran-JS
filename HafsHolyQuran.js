@@ -1,3 +1,14 @@
+/**
+ * This class provides access to the Holy Quran data.
+ * For copyright and usage information, refer to the author's GitHub repository.
+ * Last modification: 18th March 2024
+ * Quote: "Anyone can use this library. Don't forget to pray for us, and may Allah forgive our sins."
+ *
+ * @author ABDELHAKIM KHAOUITI
+ * @github khaouitiabdelhakim
+ */
+
+
 const hasfsHolyQuran = [
   {
     name: "الفاتحة",

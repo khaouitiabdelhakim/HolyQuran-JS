@@ -5,13 +5,9 @@
   "version": "1.O.0",
   "license": "MIT",
   "main": "index.js",
-  "dependencies": {
-    "html-to-text": "^9.0.5",
-    "puppeteer": "^22.0.0"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/khaouitiabdelhakim/AILyrics-JS.git"
+    "url": "git+https://github.com/khaouitiabdelhakim/HolyQuran-JS.git"
   },
   "keywords": [
     "lyrics",
@@ -24,7 +20,7 @@
     "node": ">=12.0.0"
   },
   "bugs": {
-    "url": "https://github.com/khaouitiabdelhakim/AILyrics-JS/issues"
+    "url": "https://github.com/khaouitiabdelhakim/HolyQuran-JS/issues"
   },
-  "homepage": "https://github.com/khaouitiabdelhakim/AILyrics-JS#readme"
+  "homepage": "https://github.com/khaouitiabdelhakim/HolyQuran-JS#readme"
 }

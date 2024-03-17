@@ -34,8 +34,10 @@ const germanHolyQuran = quran.QuranGerman;
 const thirdVerseFourthSurahGerman = germanHolyQuran[3][2];
 console.log(thirdVerseFourthSurahGerman);
 
-// Und wenn ihr befürchtet, nicht gerecht hinsichtlich der Waisen zu handeln, dann heiratet, was euch an Frauen gut scheint, zwei, 
-// drei oder vier. Wenn ihr aber befürchtet, nicht gerecht zu handeln, dann (nur) eine oder was eure rechte Hand besitzt. Das ist eher geeignet, daß ihr nicht ungerecht seid.
+// Und wenn ihr befürchtet, nicht gerecht hinsichtlich der Waisen zu handeln,
+// dann heiratet, was euch an Frauen gut scheint, zwei, 
+// drei oder vier. Wenn ihr aber befürchtet, nicht gerecht zu handeln,
+//dann (nur) eine oder was eure rechte Hand besitzt. Das ist eher geeignet, daß ihr nicht ungerecht seid.
 
 ```
 

@@ -42,24 +42,23 @@ console.log(thirdVerseFourthSurahGerman);
 ## Surah sample
 
 
-```json
 {
-    name: "الفلق",
-    type: "مكيّة",
-    englishName: "Al-Falak",
-    number: 113,
-    numberOfVerses: 5,
-    numberOfWords: 23,
-    numberOfLetters: 71,
-    verses: [
-      "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
-      "مِن شَرِّ مَا خَلَقَ",
-      "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
-      "وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
-      "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
-    ],
-  }
-```
+    "name": "الفلق",
+    "type": "مكيّة",
+    "englishName": "Al-Falak",
+    "number": 113,
+    "numberOfVerses": 5,
+    "numberOfWords": 23,
+    "numberOfLetters": 71,
+    "verses": [
+        "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+        "مِن شَرِّ مَا خَلَقَ",
+        "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+        "وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+        "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ"
+    ]
+}
+
 
 ## Features
 
